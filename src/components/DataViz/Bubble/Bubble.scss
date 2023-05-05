@@ -1,0 +1,43 @@
+.dataviz-bubble-graph {
+  position: relative;
+  overflow: visible;
+  circle.bubble {
+    // cursor: pointer;
+    &:hover {
+      // opacity: 0.8;
+      stroke: white;
+    }
+  }
+  .x-axis-legend,
+  .y-axis-legend {
+    fill: #ffffff;
+    font: normal 16px sans-serif;
+    letter-spacing: 2px;
+  }
+  &.no-data {
+    .dataviz-bubble-graph-core {
+      display: none;
+    }
+    .no-data-message {
+      display: block;
+      height: 650px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  &.has-data {
+    .no-data-message {
+      display: none;
+    }
+  }
+}
+
+.d3-tip-lib-node {
+  @apply text-white text-sm rounded-sm p-2;
+  width: 320px;
+  background-color: #333333;
+  background: #333333;
+  border: 1px solid #d4d2d5;
+}

@@ -1,0 +1,15 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "components/Logo/Logo.scss";
+@import "components/DataViz/Bubble/Bubble.scss";
+@import "components/Form/Radio/Radio.scss";
+@import "components/Form/Checkbox/Checkbox.scss";
+@import "components/Loading/Loading.scss";
+
+body {
+  background: #141a1e;
+  @apply text-white;
+}
